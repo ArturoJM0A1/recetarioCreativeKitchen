@@ -1,0 +1,248 @@
+.contenedorfondo {
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    position: relative;
+}
+
+.fondo {
+    height: 100%;
+    width: 100%;
+    background-image: url("images/parallax/iniciofondo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.filtro {
+    width: 100%;
+    right: 0;
+    margin-left: 25%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
+    position: absolute;
+}
+
+
+.bienvenida {
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    justify-content: flex-end;
+    /* Alinea los elementos a la derecha */
+    overflow: hidden;
+}
+
+
+
+.presentacion {
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding: 1vw;
+    padding-top: 19vh;
+    padding-bottom: 15vh;
+    padding-left: 2vw;
+    color: var(--colorletra1);
+    text-shadow: 12px 0px 24px rgb(0, 0, 0);
+    margin-top: 0;
+}
+
+.presentacion p {
+    margin: 17px;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    text-shadow: 12px 0px 24px rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.presentacion .tituloylogo {
+    display: flex;
+    flex-direction: row;
+}
+
+.presentacion .tituloylogo .titulo {
+    margin-top: 0;
+    font-size: var(--titulo1);
+}
+
+.presentacion .tituloylogo .logo {
+    position: absolute;
+    right: 0;
+    top: 2vh;
+    height: auto;
+    width: 280px;
+    margin: 0;
+    padding: 0;
+}
+
+.presentacion .subtitulo {
+    font-size: var(--subtitulo);
+}
+
+.presentacion .descripcion {
+    text-shadow: 12px 0px 24px rgb(0, 0, 0);
+    font-size: var(--textolargo);
+}
+
+
+.continuar {
+    margin-top: 30px;
+    margin-left: 55px;
+}
+
+
+.continuar {
+    cursor: pointer;
+    letter-spacing: 2px;
+    font-size: 16px;
+    font-family: monospace;
+    color: white;
+    border-radius: 8px;
+    font-weight: 800;
+    transition: 0.6s;
+    padding: 10px 20px;
+    border: none;
+    transition-property: box-shadow;
+    background: var(--naranjaNormal);
+    box-shadow: 0 0 50px var(--naranjaNormal);
+}
+
+
+
+
+
+.continuar:hover {
+    box-shadow: 0 0 5px #523b25,
+        0 0 25px #523b25,
+        0 0 50px #523b25,
+        0 0 100px #523b25,
+        0 0 500px #523b25;
+}
+
+.img1,
+.img2,
+.img3,
+.img4,
+.img5 {
+    position: absolute;
+    display: flex;
+    border-radius: 10px;
+    border: 6px solid white;
+    overflow: hidden;
+    transform: rotate(45deg);
+}
+
+
+
+.img1,
+.img2,
+.img3,
+.img4 {
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+}
+
+
+
+.img1 {
+    height: 200px;
+    width: 200px;
+    margin-top: 0px;
+}
+
+.img2 {
+    height: 300px;
+    width: 300px;
+    margin-top: 150px;
+    margin-right: 150px;
+}
+
+.img3 {
+    height: 200px;
+    width: 200px;
+    margin-top: 400px;
+}
+
+.img4 {
+    height: 200px;
+    width: 200px;
+    margin-top: 0px;
+    margin-right: 400px;
+}
+
+
+
+.img5 {
+    height: 200px;
+    width: 200px;
+    margin-top: 350px;
+    margin-right: 350px;
+    background-color: var(--naranjafuerte);
+    border: none;
+    overflow: visible;
+    position: relative;
+}
+
+.img5 .mensaje {
+    background-color: transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    color: var(--colorletra1);
+    font-size: var(--subtitulo);
+    font-weight: bolder;
+}
+
+.img1::before,
+.img2::before,
+.img3::before,
+.img4::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    right: -50%;
+    bottom: -50%;
+    background-size: 70% 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: rotate(-45deg);
+}
+
+.img1::before {
+    background-image: url("images/inicio/1.jpg");
+}
+
+.img2::before {
+    background-image: url("images/inicio/2.jpg");
+
+}
+
+
+.img3::before {
+    background-image: url("images/inicio/3.jpg");
+
+}
+
+.img4::before {
+    background-image: url("images/inicio/4.jpg");
+}
+
+
+
+
+.img1:hover::before,
+.img2:hover::before,
+.img3:hover::before,
+.img4:hover::before {
+    transform: scale(1.1) rotate(-49deg);
+    transition: transform 0.8s ease-in-out;
+}

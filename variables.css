@@ -1,0 +1,36 @@
+@import url('https://use.fontawesome.com/releases/v5.0.9/css/all.css');
+@import url('https://use.fontawesome.com/releases/v6.4.2/css/all.css');
+@import url("https://fonts.googleapis.com/css2?family=Fenix&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto+Slab:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto+Slab:wght@100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+:root {
+    --colorletra1: #fefefe;
+    --colorletra2: rgb(22, 21, 20);
+    --titulo1: 55px;
+    --titulo2: 48px;
+    --subtitulo: 33px;
+    --fonticons: 29px;
+    --textolargo: 22px;
+    --textolargo2: 17px;
+    --backgroundcolor: rgba(40, 39, 39, 1);
+    --naranjafuerte: #C64102;
+    --naranjaNormal: #E2670D;
+    --naranhadebil: #EF8615;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Fenix", serif;
+    font-style: normal;  
+}

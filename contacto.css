@@ -1,0 +1,28 @@
+#contacto {
+    width: 100%;
+    height: auto;
+    background-color: var(--colorletra2);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    font-size: var(--subtitulo);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+#contacto p {
+    padding: 0;
+    margin: 0;
+    color: var(--colorletra1);
+    background-color: transparent;
+}
+
+#contacto .fa-brands{
+    color: rgb(228, 228, 228);
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+#contacto .fa-brands:hover{
+    color: var(--naranjaNormal);
+}

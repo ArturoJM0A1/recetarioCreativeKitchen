@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
+  <link rel="stylesheet" href="variables.css">
+
+  <link rel="stylesheet" href="inicio.css">
+  <link rel="stylesheet" href="Menu.css">
+  <link rel="stylesheet" href="boton.css">
+
+  <link rel="stylesheet" href="Galeria.css">
+
+
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://rawgit.com/LeshikJanz/libraries/master/Bootstrap/baguetteBox.min.css">
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="recetasTarjetas.css">
+
+  <link rel="stylesheet" href="bebidas.css">
+
+
+  <link rel="stylesheet" href="contacto.css">
+
+
+</head>
+
+<body>
+
+
+  <div class="contenedormenu">
+    <div class="menu">
+      <i id="opcionesdelMenu" class="fa-solid fa-bars"></i>
+      <i id="cerrarMenu" class="fa-solid fa-xmark"></i>
+      <p class="estadoOption" onclick="irInicio()">Inicio</p>
+      <p class="estadoOption" onclick="irASeccion1()">Recetas del mes</p>
+      <p class="estadoOption" onclick="irASeccion2()">Recetas de comidas</p>
+      <p class="estadoOption" onclick="irASeccion3()">Recetas de bebidas</p>
+      <p class="estadoOption" onclick="iraContacto()">Contacto</p>
+    </div>
+  </div>
+
+
+  <div class="contenedorfondo" id="seccioninicio">
+    <div class="fondo">
+      <div class="filtro"></div>
+
+
+
+      <div class="bienvenida">
+        <div class="img1"></div>
+        <div class="img2"></div>
+        <div class="img3"></div>
+        <div class="img4"></div>
+
+
+        <div class="presentacion">
+          <div class="tituloylogo">
+            <p class="titulo">Creative Kitchen</p>
+            <img class="logo" src="images/Logo.png">
+          </div>
+
+          <p class="subtitulo">Recetas prácticas, sabores inolvidables</p>
+          <p class="descripcion">En nuestro rincón culinario, te esperan los mejores platillos con sabores
+            irresistibles, técnicas
+            culinarias exquisitas y experiencias gastronómicas únicas. Únete a nosotros y descubre cómo la
+            cocina puede ser más que una tarea diaria.</p>
+          <button class="continuar" onclick="irASeccion1()">Continuar</button>
+        </div>
+
+        <div class="img5">
+          <div class="mensaje">¡Bienvenido!
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <diV class="contenedorGaleria">
+
+    <diV class="filtrofondo">
+      <div class="container gallery-container">
+
+        <h1 id="seccion1">Recetas del mes</h1>
+        <div class="tz-gallery">
+
+          <div class="row">
+
+            <div class="col-sm-12 col-md-4">
+              <div class="datosrecetames">
+                <a class="lightbox" href="images/recetasDelMes/1.jpg">
+                  <img src="images/recetasDelMes/1.jpg">
+
+                  <div class="contenidorecetames">
+                    <p class="titulorecetames">
+                      Albóndigas de Nonna <br>
+                      <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </p>
+                    <i class="corazonrecetames fa-solid fa-heart"></i>
+                    <button class="botonuniversal verReceta">Leer</button>
+                    <button class="botonuniversal verReceta">Guardar</button>
+                  </div>
+                </a>
+
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <div class="datosrecetames">
+                <a class="lightbox" href="images/recetasDelMes/2.jpg">
+                  <img src="images/recetasDelMes/2.jpg">
+
+                  <div class="contenidorecetames">
+                    <p class="titulorecetames">
+                      Espaguetis con gambas <br>
+                      <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </p>
+                    <i class="corazonrecetames fa-solid fa-heart"></i>
+                    <button class="botonuniversal verReceta">Leer</button>
+                    <button class="botonuniversal verReceta">Guardar</button>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <div class="datosrecetames">
+                <a class="lightbox" href="images/recetasDelMes/3.jpg">
+                  <img src="images/recetasDelMes/3.jpg">
+
+                  <div class="contenidorecetames">
+                    <p class="titulorecetames">
+                      Pastel de aceite de oliva con avellanas y ricotta <br>
+                      <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </p>
+                    <i class="corazonrecetames fa-solid fa-heart"></i>
+                    <button class="botonuniversal verReceta">Leer</button>
+                    <button class="botonuniversal verReceta">Guardar</button>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-8">
+              <div class="datosrecetames">
+                <a class="lightbox" href="images/recetasDelMes/4.jpg">
+                  <img src="images/recetasDelMes/4.jpg">
+
+                  <div id="recetaDelDia">
+                    <br>
+                    <i class="fa-solid fa-sun"></i>
+                    ¡Esta es la receta del día!
+                    <i class="fa-solid fa-sun"></i>
+                  </div>
+
+                  <div class="contenidorecetames">
+                    <p class="titulorecetames">
+                      Pizza marinara<br>
+                      <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </p>
+                    <i class="corazonrecetames fa-solid fa-heart"></i>
+                    <button class="botonuniversal verReceta">Leer</button>
+                    <button class="botonuniversal verReceta">Guardar</button>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <div class="datosrecetames">
+                <a class="lightbox" href="images/recetasDelMes/5.jpg">
+                  <img src="images/recetasDelMes/5.jpg">
+
+                  <div class="contenidorecetames">
+                    <p class="titulorecetames">
+                      Tarta de queso al estilo italiano <br>
+                      <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </p>
+                    <i class="corazonrecetames fa-solid fa-heart"></i>
+                    <button class="botonuniversal verReceta">Leer</button>
+                    <button class="botonuniversal verReceta">Guardar</button>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4">
+              <div class="datosrecetames">
+                <a class="lightbox" href="images/recetasDelMes/6.jpg">
+                  <img src="images/recetasDelMes/6.jpg">
+
+                  <div class="contenidorecetames">
+                    <p class="titulorecetames">
+                      Ternera osso bucco alla al azafrán <br>
+                      <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </p>
+                    <i class="corazonrecetames fa-solid fa-heart"></i>
+                    <button class="botonuniversal verReceta">Leer</button>
+                    <button class="botonuniversal verReceta">Guardar</button>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </diV>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+    <script>
+      baguetteBox.run('.tz-gallery');
+    </script>
+  </diV>
+
+
+
+  <div class="contenParallax" id="seccion2">
+    <div class="parallax">
+
+      <h1 class="titulorecetasdecomida">Recetas de comida</h1>
+
+      <section>
+
+
+
+        <div class="swiper mySwiper container">
+          <div class="swiper-wrapper content">
+
+            <div class="swiper-slide card">
+              <div class="card-content">
+                <div class="image">
+                  <img src="images/recetasTarjetas/1.jpg" alt="">
+                </div>
+
+                <div class="media-icons">
+                  <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="contenidoreceta">
+                  <span class="name">Pasta Alfredo con Pollo </span>
+                  <span class="profession">Una pasta cremosa con una salsa Alfredo casera y trozos tiernos de pollo.
+                  </span>
+                </div>
+
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+
+                <div class="button">
+                  <button class="aboutMe verReceta">Leer</button>
+                  <button class="hireMe verReceta">Guardar</button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide card">
+              <div class="card-content">
+                <div class="image">
+                  <img src="images/recetasTarjetas/2.jpg" alt="">
+                </div>
+
+                <div class="media-icons">
+                  <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="contenidoreceta">
+                  <span class="name">Ensalada César con Pollo a la Parrilla </span>
+                  <span class="profession">
+                    Una clásica ensalada César con crujientes trozos de pollo a la parrilla, aderezada con una deliciosa
+                    vinagreta.
+                  </span>
+                </div>
+
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+
+                <div class="button">
+                  <button class="aboutMe verReceta">Leer</button>
+                  <button class="hireMe verReceta">Guardar</button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide card">
+              <div class="card-content">
+                <div class="image">
+                  <img src="images/recetasTarjetas/3.jpg" alt="">
+                </div>
+
+                <div class="media-icons">
+                  <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="contenidoreceta">
+                  <span class="name">Tacos de Pescado con Salsa de Mango </span>
+                  <span class="profession">Tortillas rellenas de pescado crujiente, repollo rallado y una refrescante
+                    salsa de mango.
+                  </span>
+                </div>
+
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+
+                <div class="button">
+                  <button class="aboutMe verReceta">Leer</button>
+                  <button class="hireMe verReceta">Guardar</button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide card">
+              <div class="card-content">
+                <div class="image">
+                  <img src="images/recetasTarjetas/4.jpg" alt="">
+                </div>
+
+                <div class="media-icons">
+                  <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="contenidoreceta">
+                  <span class="name">Lasaña de Carne </span>
+                  <span class="profession">Capas de pasta intercaladas con una mezcla de carne sazonada, salsa de tomate
+                    y
+                    queso derretido.
+                  </span>
+                </div>
+
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+
+                <div class="button">
+                  <button class="aboutMe verReceta">Leer</button>
+                  <button class="hireMe verReceta">Guardar</button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide card">
+              <div class="card-content">
+                <div class="image">
+                  <img src="images/recetasTarjetas/5.jpg" alt="">
+                </div>
+
+                <div class="media-icons">
+                  <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="contenidoreceta">
+                  <span class="name">Sopa de Tomate y Albóndigas </span>
+                  <span class="profession">Una sopa reconfortante con albóndigas caseras, tomate y hierbas aromáticas.
+                  </span>
+                </div>
+
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+
+                <div class="button">
+                  <button class="aboutMe verReceta">Leer</button>
+                  <button class="hireMe verReceta">Guardar</button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide card">
+              <div class="card-content">
+                <div class="image">
+                  <img src="images/recetasTarjetas/6.jpg" alt="">
+                </div>
+
+                <div class="media-icons">
+                  <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="contenidoreceta">
+                  <span class="name">Pollo a la Naranja con Arroz </span>
+                  <span class="profession">Trozos de pollo glaseados en una salsa agridulce de naranja, servidos sobre
+                    arroz blanco. </span>
+                </div>
+
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+
+                <div class="button">
+                  <button class="aboutMe verReceta">Leer</button>
+                  <button class="hireMe verReceta">Guardar</button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide card">
+              <div class="card-content">
+                <div class="image">
+                  <img src="images/recetasTarjetas/7.jpg" alt="">
+                </div>
+
+                <div class="media-icons">
+                  <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="contenidoreceta">
+                  <span class="name">Hamburguesas Vegetarianas de Garbanzos </span>
+                  <span class="profession">Hamburguesas saludables y sabrosas hechas con garbanzos, especias y
+                    vegetales,
+                    servidas con pan integral.
+                  </span>
+                </div>
+
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+
+                <div class="button">
+                  <button class="aboutMe verReceta">Leer</button>
+                  <button class="hireMe verReceta">Guardar</button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide card">
+              <div class="card-content">
+                <div class="image">
+                  <img src="images/recetasTarjetas/8.jpg" alt="">
+                </div>
+
+                <div class="media-icons">
+                  <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="contenidoreceta">
+                  <span class="name">Arroz Frito con Verduras y Tofu </span>
+                  <span class="profession">Arroz salteado con tofu, brócoli, zanahorias y guisantes en una deliciosa
+                    mezcla de salsa de soja.
+                  </span>
+                </div>
+
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+
+                <div class="button">
+                  <button class="aboutMe verReceta">Leer</button>
+                  <button class="hireMe verReceta">Guardar</button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide card">
+              <div class="card-content">
+                <div class="image">
+                  <img src="images/recetasTarjetas/9.jpg" alt="">
+                </div>
+
+                <div class="media-icons">
+                  <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="contenidoreceta">
+                  <span class="name">Camarones a la Parrilla con Limón y Ajo </span>
+                  <span class="profession">Camarones marinados en ajo y limón, luego a la parrilla para obtener un sabor
+                    fresco y delicioso.
+                  </span>
+                </div>
+
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+
+                <div class="button">
+                  <button class="aboutMe verReceta">Leer</button>
+                  <button class="hireMe verReceta">Guardar</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </section>
+
+      <!-- Swiper JS -->
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+      <script src="./recetasTarjetas.js"></script>
+
+    </div>
+  </div>
+
+
+
+  <div class="parallaxbebidas" id="seccion3">
+
+    <div class="todaslasbebidas">
+      <h1 class="titulobebidas">Recetas de bebidas</h1>
+
+
+      <div class="contenedorbebida">
+        <div class="plato bebida1">
+          <div class="plato2">
+            <i class="fa-solid fa-heart heartbebida"></i>
+          </div>
+          <div class="descbebida">
+            <p>Margarita
+              <br>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </p>
+            <button class="botonuniversal verReceta">Leer</button>
+            <button class="botonuniversal verReceta">Guardar</button>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="contenedorbebida">
+        <div class="plato bebida2">
+          <div class="plato2">
+            <i class="fa-solid fa-heart heartbebida"></i>
+          </div>
+          <div class="descbebida">
+            <p>Martini
+              <br>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+            </p>
+
+            <button class="botonuniversal verReceta">Leer</button>
+            <button class="botonuniversal verReceta">Guardar</button>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="contenedorbebida">
+        <div class="plato bebida3">
+          <div class="plato2">
+            <i class="fa-solid fa-heart heartbebida"></i>
+          </div>
+          <div class="descbebida">
+            <p>Mojito de naranja
+              <br>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+
+            </p>
+            <button class="botonuniversal verReceta">Leer</button>
+            <button class="botonuniversal verReceta">Guardar</button>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="contenedorbebida">
+        <div class="plato bebida4">
+          <div class="plato2">
+            <i class="fa-solid fa-heart heartbebida"></i>
+          </div>
+          <div class="descbebida">
+            <p>Limonada
+              <br>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+
+            </p>
+            <button class="botonuniversal verReceta">Leer</button>
+            <button class="botonuniversal verReceta">Guardar</button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <div id="contacto">
+    <br>
+    <p>By: Arturo Juárez Monroy</p>
+    <p>Email:&nbsp;&nbsp;juarezmonroyarturo574@gmail.com&nbsp;&nbsp;/&nbsp;&nbsp;ju449944@uaeh.edu.mx</p>
+    <i class="fa-brands fa-github"></i>
+    <i class="fa-brands fa-facebook"></i>
+    <i class="fa-brands fa-twitter"></i>
+    <i class="fa-brands fa-telegram"></i>
+    <i class="fa-brands fa-instagram"></i>
+    <br>
+
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>

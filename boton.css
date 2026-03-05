@@ -1,0 +1,60 @@
+
+#opcionesdelMenu:hover,
+#cerrarMenu:hover,
+.estadoOption:hover, .verReceta:hover
+{
+    letter-spacing: 0.7px;
+    font-weight: bold;
+    color: transparent;
+    position: relative; 
+    transition: color 0.5s ease; 
+}
+
+.continuar:hover{
+    font-weight: bold;
+    color: transparent;
+    position: relative; 
+    transition: color 0.5s ease; 
+}
+
+
+
+
+#opcionesdelMenu:hover::after,
+#cerrarMenu:hover::after,
+.estadoOption:hover::after, .continuar:hover::after, .verReceta:hover::after {
+    content: "";
+    position: absolute;
+    height: 37px;
+    width: 37px;
+    background-image: url("images/hoverIcon.png");
+    background-size: cover;
+    margin-top: 0;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+.botonuniversal {
+    background: var(--naranjaNormal);
+    outline: none;
+    border: none;
+    color: #fff;
+    padding: 8px 22px;
+    border-radius: 10px;
+    font-size: var(--textolargo2);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 5px;
+  }
+
+  .botonuniversal:hover {
+    background: var(--naranjafuerte);
+  }
+
+  .fa-star{
+    color: var(--naranjaNormal);
+  }
